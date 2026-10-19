@@ -1,0 +1,474 @@
+.drive-details-page {
+  min-height: 100vh;
+  padding: 24px 48px 60px;
+  background: #f7f8fa;
+  color: #061b36;
+}
+
+.drive-details-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 18px;
+  color: #243b5a;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.drive-details-summary {
+  display: grid;
+  grid-template-columns:
+    minmax(300px, 1.4fr)
+    minmax(115px, 0.55fr)
+    minmax(100px, 0.5fr)
+    minmax(110px, 0.5fr)
+    minmax(170px, 0.75fr)
+    minmax(220px, 0.9fr);
+  align-items: stretch;
+  padding: 22px 24px;
+  background: #ffffff;
+  border: 1px solid #e2e7ee;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(6, 27, 54, 0.04);
+}
+
+.drive-summary-company {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding-right: 24px;
+}
+
+.drive-summary-logo {
+  width: 120px;
+  height: 96px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #e2e7ee;
+  border-radius: 9px;
+  background: white;
+}
+
+.drive-summary-logo img {
+  width: 88px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.drive-summary-company h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.drive-summary-company h2 {
+  margin: 12px 0;
+  font-size: 16px;
+}
+
+.drive-summary-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  color: #57667c;
+  font-size: 13px;
+}
+
+.drive-summary-meta span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.drive-summary-stat,
+.drive-summary-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  padding: 0 22px;
+  border-left: 1px solid #e2e7ee;
+}
+
+.drive-summary-stat-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #56657a;
+  font-size: 13px;
+}
+
+.drive-summary-stat strong {
+  font-size: 17px;
+}
+
+.drive-summary-status > span {
+  color: #56657a;
+  font-size: 12px;
+}
+
+.drive-eligible-badge {
+  width: fit-content;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #dcf6e9;
+  color: #078554;
+  font-size: 12px;
+}
+
+.drive-summary-deadline {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.drive-summary-deadline span {
+  color: #56657a;
+  font-size: 12px;
+}
+
+.drive-summary-deadline strong {
+  color: #e32636;
+  font-size: 13px;
+}
+
+.drive-summary-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding-left: 26px;
+  border-left: 1px solid #e2e7ee;
+}
+
+.drive-summary-actions button {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.save-drive-button {
+  border: 1px solid #e3ae1b;
+  background: white;
+  color: #061b36;
+}
+
+.apply-drive-button {
+  border: 1px solid #e3ae1b;
+  background: #e3ae1b;
+  color: white;
+}
+
+.apply-drive-button:hover {
+  background: #c79511;
+}
+
+.drive-details-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 350px;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.drive-details-content {
+  padding: 10px 28px;
+  background: white;
+  border: 1px solid #e2e7ee;
+  border-radius: 11px;
+  box-shadow: 0 3px 14px rgba(6, 27, 54, 0.035);
+}
+
+.drive-content-section {
+  padding: 22px 0;
+}
+
+.drive-content-section h2 {
+  margin: 0 0 12px;
+  font-size: 16px;
+}
+
+.drive-content-section p {
+  margin: 0;
+  color: #44546b;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.drive-content-divider {
+  height: 1px;
+  background: #e6eaf0;
+}
+
+.drive-bullet-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #33445d;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.drive-bullet-list.two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 48px;
+}
+
+.official-description-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.official-description-preview {
+  max-width: 690px;
+}
+
+.official-description-toggle {
+  min-width: 190px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 14px;
+  border: 1px solid #d8dee7;
+  border-radius: 8px;
+  background: white;
+  color: #061b36;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.official-description-content {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #e6eaf0;
+}
+
+.drive-details-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.drive-sidebar-card {
+  padding: 20px;
+  background: white;
+  border: 1px solid #e2e7ee;
+  border-radius: 11px;
+  box-shadow: 0 3px 14px rgba(6, 27, 54, 0.035);
+}
+
+.drive-sidebar-heading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 18px;
+}
+
+.drive-sidebar-heading h2 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.drive-sidebar-heading svg {
+  color: #3478d4;
+}
+
+.drive-sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.drive-sidebar-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 15px;
+  align-items: center;
+  font-size: 12px;
+}
+
+.drive-sidebar-item span {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #56657a;
+}
+
+.drive-sidebar-item span svg {
+  color: #0b9b67;
+}
+
+.drive-sidebar-item strong {
+  color: #061b36;
+  text-align: right;
+}
+
+.drive-sidebar-item .positive-value {
+  color: #0b9b67;
+}
+
+.drive-sidebar-item .deadline-value {
+  color: #e32636;
+}
+
+.drive-help-card > p {
+  margin: 0 0 18px;
+  color: #56657a;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.drive-tpo-contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid #edf0f4;
+  border-radius: 9px;
+}
+
+.drive-tpo-avatar {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #e3ae1b;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.drive-tpo-contact div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.drive-tpo-contact strong {
+  font-size: 13px;
+}
+
+.drive-tpo-contact span {
+  color: #66748a;
+  font-size: 11px;
+}
+
+.drive-contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 16px 0;
+  color: #43536a;
+  font-size: 12px;
+}
+
+.drive-contact-details span {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.drive-message-button {
+  width: 100%;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #e3ae1b;
+  border-radius: 8px;
+  background: white;
+  color: #c79511;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.drive-details-not-found {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.drive-details-not-found a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #c79511;
+  text-decoration: none;
+}
+
+@media (max-width: 1250px) {
+  .drive-details-summary {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .drive-summary-company {
+    grid-column: span 3;
+  }
+
+  .drive-summary-stat,
+  .drive-summary-status,
+  .drive-summary-actions {
+    padding: 0;
+    border-left: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .drive-details-page {
+    padding: 22px 20px 50px;
+  }
+
+  .drive-details-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .drive-details-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .drive-summary-company {
+    grid-column: span 2;
+  }
+
+  .drive-summary-actions {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .drive-details-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .drive-summary-company,
+  .drive-summary-actions {
+    grid-column: auto;
+  }
+
+  .drive-summary-company {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .drive-bullet-list.two-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .official-description-heading {
+    flex-direction: column;
+  }
+
+  .official-description-toggle {
+    width: 100%;
+  }
+}

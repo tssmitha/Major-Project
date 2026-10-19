@@ -1,0 +1,182 @@
+.drive-students-panel {
+  margin-top: 24px;
+  overflow: hidden;
+  border: 1px solid #e1e6ed;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.drive-students-panel-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.drive-students-panel-header h2 {
+  margin: 0 0 6px;
+  color: #172033;
+  font-size: 1.1rem;
+}
+
+.drive-students-panel-header p {
+  margin: 0;
+  color: #778195;
+  font-size: 0.82rem;
+}
+
+.drive-students-panel-header > strong {
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #eef3f9;
+  color: #315b96;
+  font-size: 0.75rem;
+}
+
+/* Filters */
+
+.drive-student-filters {
+  display: grid;
+  grid-template-columns: minmax(280px, 2fr) repeat(2, minmax(170px, 1fr));
+  gap: 16px;
+  padding: 18px 22px;
+  background: #fafbfc;
+}
+
+.drive-student-filters > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.drive-student-filters label {
+  color: #344054;
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.drive-student-filters input,
+.drive-student-filters select {
+  width: 100%;
+  height: 40px;
+  padding: 0 11px;
+  border: 1px solid #d6dce5;
+  border-radius: 7px;
+  outline: none;
+  background: #fff;
+  color: #344054;
+  font: inherit;
+  font-size: 0.82rem;
+}
+
+.drive-student-filters input:focus,
+.drive-student-filters select:focus {
+  border-color: #315b96;
+  box-shadow: 0 0 0 3px rgba(49, 91, 150, 0.1);
+}
+
+/* Student table */
+
+.drive-students-table-wrapper {
+  overflow-x: auto;
+}
+
+.drive-students-table {
+  width: 100%;
+  min-width: 850px;
+  border-collapse: collapse;
+}
+
+.drive-students-table th {
+  padding: 13px 18px;
+  border-bottom: 1px solid #e1e6ed;
+  background: #f8f9fb;
+  color: #667085;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.drive-students-table td {
+  padding: 15px 18px;
+  border-bottom: 1px solid #edf0f4;
+  color: #536075;
+  font-size: 0.82rem;
+}
+
+.drive-students-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.drive-students-table tbody tr:hover {
+  background: #fafbfc;
+}
+
+.drive-students-table td strong {
+  color: #172033;
+}
+
+.drive-students-table button {
+  padding: 6px 10px;
+  border: 1px solid #cfd8e5;
+  border-radius: 6px;
+  background: #fff;
+  color: #315b96;
+  font-size: 0.74rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.drive-students-table button:hover {
+  border-color: #315b96;
+  background: #f3f7fc;
+}
+
+/* Outcome badges */
+
+.drive-student-outcome {
+  display: inline-flex;
+  padding: 5px 8px;
+  border-radius: 20px;
+  font-size: 0.67rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.drive-student-outcome.selected,
+.drive-student-outcome.qualified {
+  background: #e8f7ef;
+  color: #237a49;
+}
+
+.drive-student-outcome.in-progress {
+  background: #fff4dc;
+  color: #946b10;
+}
+
+.drive-student-outcome.eliminated {
+  background: #fdecec;
+  color: #b42318;
+}
+
+.drive-students-table .drive-students-empty {
+  padding: 42px 20px;
+  color: #8a94a6;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .drive-student-filters {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .drive-students-panel-header {
+    flex-direction: column;
+  }
+}

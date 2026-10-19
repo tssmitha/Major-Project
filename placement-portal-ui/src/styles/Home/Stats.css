@@ -1,0 +1,33 @@
+.stats-strip {
+  width: 86%;
+  margin: -45px auto 60px;
+  padding: 28px 40px;
+  background: white;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+  position: relative;
+  z-index: 5;
+}
+
+.stats-strip div {
+  text-align: center;
+  border-right: 1px solid #e5e7eb;
+}
+
+.stats-strip div:last-child {
+  border-right: none;
+}
+
+.stats-strip strong {
+  display: block;
+  font-size: 2rem;
+  color: #061b36;
+}
+
+.stats-strip span {
+  font-size: 0.9rem;
+  color: #4b5563;
+}

@@ -1,0 +1,403 @@
+.login-page {
+  min-height: 90vh;
+  background: #f3f6fb;
+  padding: 32px 24px 16px;
+  font-family: "Inter", sans-serif;
+  color: #071a3a;
+}
+
+.login-container {
+  max-width: 1320px;
+  min-height: 760px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 22px 55px rgba(7, 26, 58, 0.16);
+}
+
+.login-brand-panel {
+  position: relative;
+  background:
+    linear-gradient(rgba(3, 24, 52, 0.8), rgba(3, 24, 52, 0.88)),
+    url("/nie-campus.jpg") center/cover no-repeat;
+  color: #ffffff;
+}
+
+.brand-overlay {
+  height: 100%;
+  padding: 58px 58px 42px;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-header {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.brand-logo {
+  width: 82px;
+  height: 82px;
+  object-fit: contain;
+}
+
+.brand-header h2 {
+  font-size: 31px;
+  margin: 0;
+  font-weight: 800;
+}
+
+.brand-header p {
+  margin: 8px 0 0;
+  color: #f7bd22;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.brand-content {
+  margin-top: 90px;
+}
+
+.gold-line {
+  display: block;
+  width: 84px;
+  height: 3px;
+  background: #f7bd22;
+  border-radius: 10px;
+  margin: 0 0 26px;
+}
+
+.brand-content h1 {
+  font-size: 42px;
+  line-height: 1.32;
+  margin: 0 0 32px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.security-line {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 28px;
+  color: #ffffff;
+}
+
+.security-line svg,
+.brand-stats svg {
+  color: #f7bd22;
+}
+
+.security-line p {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.brand-stats {
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.brand-stats div {
+  text-align: center;
+  padding: 0 14px;
+  border-right: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.brand-stats div:last-child {
+  border-right: none;
+}
+
+.brand-stats h3 {
+  margin: 10px 0 4px;
+  font-size: 20px;
+}
+
+.brand-stats p {
+  margin: 0;
+  font-size: 15px;
+  color: #eef3fb;
+}
+
+.login-form-panel {
+  padding: 58px 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lock-circle {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: #fff4df;
+  color: #c99312;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.login-form-panel h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.login-subtitle {
+  margin: 18px 0 38px;
+  text-align: center;
+  color: #5e6c84;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 540px;
+}
+
+.form-group {
+  margin-bottom: 26px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #071a3a;
+}
+
+.input-box {
+  height: 60px;
+  border: 1.5px solid #d8dee9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 18px;
+  transition: 0.2s ease;
+}
+
+.input-box:focus-within {
+  border-color: #092b5f;
+  box-shadow: 0 0 0 4px rgba(9, 43, 95, 0.08);
+}
+
+.input-box svg {
+  color: #718096;
+  flex-shrink: 0;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  font-size: 17px;
+  color: #071a3a;
+  background: transparent;
+}
+
+.input-box input::placeholder {
+  color: #77869d;
+}
+
+.password-toggle {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px 0 28px;
+  font-size: 16px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #5e6c84;
+  cursor: pointer;
+}
+
+.remember-me input {
+  width: 20px;
+  height: 20px;
+  accent-color: #092b5f;
+}
+
+.form-options a {
+  color: #0066ff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.login-btn {
+  width: 100%;
+  height: 60px;
+  background: #032757;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(3, 39, 87, 0.2);
+}
+
+.login-btn:hover {
+  background: #021f47;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 30px 0;
+  color: #5e6c84;
+}
+
+.divider span {
+  height: 1px;
+  flex: 1;
+  background: #d8dee9;
+}
+
+.divider p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.activate-btn {
+  width: 100%;
+  height: 58px;
+  background: #ffffff;
+  border: 1.5px solid #092b5f;
+  border-radius: 7px;
+  color: #071a3a;
+  font-size: 17px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  cursor: pointer;
+}
+
+.activate-btn:hover {
+  background: #f4f7fb;
+}
+
+.security-notice {
+  width: 100%;
+  max-width: 540px;
+  margin-top: 46px;
+  background: #f1f4f9;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.security-notice svg {
+  color: #092b5f;
+  flex-shrink: 0;
+}
+
+.security-notice p {
+  margin: 0;
+  color: #31425f;
+  font-size: 16px;
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+.login-footer {
+  text-align: center;
+  color: #718096;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 22px;
+}
+
+@media (max-width: 1050px) {
+  .login-container {
+    grid-template-columns: 1fr;
+  }
+
+  .login-brand-panel {
+    min-height: 480px;
+  }
+}
+
+@media (max-width: 650px) {
+  .login-page {
+    padding: 0;
+  }
+
+  .login-container {
+    border-radius: 0;
+  }
+
+  .brand-overlay,
+  .login-form-panel {
+    padding: 36px 24px;
+  }
+
+  .brand-content {
+    margin-top: 56px;
+  }
+
+  .brand-content h1,
+  .login-form-panel h1 {
+    font-size: 32px;
+  }
+
+  .brand-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 0;
+    margin-top: 64px;
+  }
+
+  .brand-stats div {
+    border-right: none;
+  }
+
+  .login-subtitle {
+    font-size: 16px;
+  }
+}
+
+.login-brand-panel {
+  position: relative;
+
+  background:
+    linear-gradient(
+      rgba(6, 27, 54, 0.78),
+      rgba(6, 27, 54, 0.82)
+    ),
+    url("/images/nie-campus.jpg");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  color: white;
+  overflow: hidden;
+}

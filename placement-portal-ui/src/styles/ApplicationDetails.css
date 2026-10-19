@@ -1,0 +1,221 @@
+.application-details-page {
+  min-height: 100vh;
+  padding: 42px clamp(20px, 6vw, 90px);
+  background: #f5f7fa;
+  color: #061b36;
+}
+
+/* Back button */
+
+.application-details-page .back-button {
+  margin-bottom: 24px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #526174;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.application-details-page .back-button:hover {
+  color: #c79511;
+}
+
+.application-details-page > h1 {
+  margin: 0 0 26px;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: #061b36;
+}
+
+.application-details-page > h1,
+.application-details-page > .back-button {
+  display: block;
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.application-details-page > .back-button {
+  text-align: left;
+}
+
+/* Main card */
+
+.application-details-card {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 34px;
+  border: 1px solid rgba(6, 27, 54, 0.08);
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(6, 27, 54, 0.08);
+}
+
+.application-details-card > h2 {
+  margin: 0 0 7px;
+  color: #061b36;
+  font-size: 1.55rem;
+}
+
+.application-details-card > h2 + p {
+  margin: 0 0 28px;
+  color: #c79511;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.application-details-card > p {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 18px;
+  margin: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(6, 27, 54, 0.08);
+  color: #526174;
+  font-size: 0.93rem;
+}
+
+.application-details-card > p strong {
+  color: #26384f;
+  font-weight: 700;
+}
+
+/* Progress section */
+
+.application-status-section {
+  margin-top: 34px;
+  padding: 28px;
+  border-radius: 14px;
+  background: #f8f9fb;
+}
+
+.application-status-section h3 {
+  margin: 0 0 28px;
+  color: #061b36;
+  font-size: 1.05rem;
+}
+
+/* Details timeline */
+
+.application-details-page .details-timeline {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.application-details-page .timeline-step {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #929cab;
+  text-align: center;
+}
+
+.application-details-page .timeline-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: calc(50% + 20px);
+  width: calc(100% - 40px);
+  height: 3px;
+  border-radius: 10px;
+  background: #d8dde4;
+}
+
+.application-details-page
+  .timeline-step.completed:not(:last-child)::after {
+  background: #e3ae1b;
+}
+
+.application-details-page .timeline-marker {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 2px solid #cbd1d9;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #8993a1;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.application-details-page .timeline-step.completed {
+  color: #1b7f42;
+}
+
+.application-details-page
+  .timeline-step.completed
+  .timeline-marker {
+  border-color: #1b8a3c;
+  background: #1b8a3c;
+  color: #ffffff;
+}
+
+.application-details-page .timeline-step.rejected {
+  color: #b83232;
+}
+
+.application-details-page
+  .timeline-step.rejected
+  .timeline-marker {
+  border-color: #c43c3c;
+  background: #c43c3c;
+  color: #ffffff;
+}
+
+.application-details-page .step-label {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* Application-not-found state */
+
+.application-details-page > button:not(.back-button) {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #061b36;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .application-details-page {
+    padding: 28px 16px;
+  }
+
+  .application-details-card {
+    padding: 24px 18px;
+  }
+
+  .application-details-card > p {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .application-status-section {
+    padding: 24px 12px;
+  }
+
+  .application-details-page .step-label {
+    font-size: 0.65rem;
+  }
+}

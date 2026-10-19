@@ -1,0 +1,339 @@
+.admin-drives-page {
+  min-height: 100vh;
+  padding: 42px clamp(20px, 6vw, 90px) 70px;
+  background: #f5f7fa;
+  color: #061b36;
+}
+
+/* Header */
+
+.admin-page-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.admin-page-label {
+  margin: 0 0 9px;
+  color: #c79511;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.admin-page-header h1 {
+  margin: 0;
+  color: #061b36;
+  font-size: clamp(2rem, 3vw, 2.65rem);
+  letter-spacing: -0.04em;
+}
+
+.admin-page-header p:not(.admin-page-label) {
+  margin: 9px 0 0;
+  color: #66758a;
+  font-size: 0.97rem;
+}
+
+.admin-primary-button {
+  padding: 13px 19px;
+  border: 1px solid #061b36;
+  border-radius: 9px;
+  background: #061b36;
+  color: #fff;
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.admin-primary-button:hover {
+  background: #0b2c55;
+  transform: translateY(-2px);
+}
+
+/* Summary */
+
+.admin-drive-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.admin-drive-summary-card {
+  min-height: 150px;
+  padding: 21px;
+  border: 1px solid rgba(6, 27, 54, 0.1);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(6, 27, 54, 0.05);
+}
+
+.admin-drive-summary-card > span {
+  display: block;
+  color: #6b788a;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.admin-drive-summary-card strong {
+  display: block;
+  margin: 12px 0 7px;
+  color: #061b36;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.admin-drive-summary-card p {
+  margin: 0;
+  color: #8490a0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.admin-drive-summary-card.attention-card {
+  border-color: rgba(199, 149, 17, 0.35);
+  background: linear-gradient(135deg, #fffdf7, #fff8e7);
+}
+
+.attention-card strong {
+  color: #b57d00;
+}
+
+/* Main panel */
+
+.admin-drives-panel {
+  padding: 25px;
+  border: 1px solid rgba(6, 27, 54, 0.1);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(6, 27, 54, 0.06);
+}
+
+.admin-panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admin-panel-heading h2 {
+  margin: 0;
+  font-size: 1.22rem;
+  color: #061b36;
+}
+
+.admin-panel-heading p {
+  margin: 5px 0 0;
+  color: #7c8999;
+  font-size: 0.84rem;
+}
+
+/* Controls */
+
+.admin-drive-controls {
+  display: grid;
+  grid-template-columns: minmax(210px, 1.8fr) repeat(3, minmax(130px, 1fr));
+  gap: 12px;
+  margin-bottom: 23px;
+}
+
+.admin-drive-controls input,
+.admin-drive-controls select {
+  width: 100%;
+  min-height: 43px;
+  padding: 0 13px;
+  border: 1px solid #dbe1e8;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+  color: #34465b;
+  font: inherit;
+  font-size: 0.87rem;
+}
+
+.admin-drive-controls input::placeholder {
+  color: #98a3b1;
+}
+
+.admin-drive-controls input:focus,
+.admin-drive-controls select:focus {
+  border-color: #c79511;
+  box-shadow: 0 0 0 3px rgba(227, 174, 27, 0.13);
+}
+
+/* Table */
+
+.admin-drives-table-wrap {
+  overflow-x: auto;
+}
+
+.admin-drives-table {
+  width: 100%;
+  min-width: 910px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.admin-drives-table th {
+  padding: 0 15px 13px;
+  border-bottom: 1px solid #e5e9ee;
+  color: #778597;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.admin-drives-table td {
+  padding: 17px 15px;
+  border-bottom: 1px solid #edf0f3;
+  color: #526174;
+  font-size: 0.87rem;
+  vertical-align: middle;
+}
+
+.admin-drives-table tbody tr {
+  transition: background 0.18s ease;
+}
+
+.admin-drives-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.admin-drives-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-company-name {
+  color: #061b36 !important;
+  font-weight: 750;
+}
+
+/* Status badges */
+
+.admin-drive-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 27px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  font-size: 0.73rem;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.admin-drive-status.open {
+  background: #e8f7ef;
+  color: #167244;
+}
+
+.admin-drive-status.draft {
+  background: #eff2f5;
+  color: #687788;
+}
+
+.admin-drive-status.closed {
+  background: #fdeeed;
+  color: #b5433d;
+}
+
+.admin-drive-status.in-progress {
+  background: #fff4d8;
+  color: #9a6900;
+}
+
+.admin-drive-status.completed {
+  background: #e8f0fb;
+  color: #285d9f;
+}
+
+.admin-drive-status.cancelled {
+  background: #f3edf3;
+  color: #805578;
+}
+
+/* Actions */
+
+.admin-manage-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #0a4d8c;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 750;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.admin-manage-button span {
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.admin-manage-button:hover {
+  color: #c79511;
+}
+
+.admin-manage-button:hover span {
+  transform: translateX(3px);
+}
+
+.admin-empty-state {
+  padding: 40px 20px 20px;
+  text-align: center;
+  color: #7c8999;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+
+@media (max-width: 980px) {
+  .admin-drive-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .admin-drive-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .admin-drive-controls input {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-drives-page {
+    padding: 30px 16px 50px;
+  }
+
+  .admin-page-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-primary-button {
+    width: 100%;
+  }
+
+  .admin-drive-summary,
+  .admin-drive-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-drive-controls input {
+    grid-column: auto;
+  }
+
+  .admin-drives-panel {
+    padding: 19px 14px;
+  }
+}

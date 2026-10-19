@@ -1,0 +1,385 @@
+.student-record-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.student-record-summary article {
+  padding: 20px 22px;
+  background: #ffffff;
+  border: 1px solid #e6e9ee;
+  border-radius: 12px;
+}
+
+.student-record-summary span {
+  display: block;
+  margin-bottom: 12px;
+
+  color: #667085;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.student-record-summary strong {
+  display: block;
+  margin-bottom: 6px;
+
+  color: #172033;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.student-record-summary p {
+  margin: 0;
+  color: #98a2b3;
+  font-size: 0.78rem;
+}
+
+.student-placement-record-page {
+  min-height: 100vh;
+  padding: 32px;
+  background: #f5f7fa;
+  color: #172033;
+}
+
+/* Back link */
+
+.student-record-back {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 24px;
+
+  color: #667085;
+  font-size: 0.84rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.student-record-back:hover {
+  color: #8d6a12;
+}
+
+/* Header */
+
+.student-record-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+
+  padding: 24px 26px;
+
+  background: #ffffff;
+  border: 1px solid #e6e9ee;
+  border-radius: 12px;
+}
+
+.student-record-label {
+  margin: 0 0 7px;
+
+  color: #8d6a12;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+}
+
+.student-record-header h1 {
+  margin: 0;
+
+  color: #172033;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.student-record-header > div > p:last-child {
+  margin: 8px 0 0;
+
+  color: #667085;
+  font-size: 0.86rem;
+}
+
+.student-record-header > .student-status {
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .student-placement-record-page {
+    padding: 20px;
+  }
+
+  .student-record-header {
+    flex-direction: column;
+  }
+
+  .student-record-summary {
+    grid-template-columns: 1fr;
+  }
+}
+
+.student-journey-section {
+  margin-top: 30px;
+}
+
+.student-journey-heading {
+  margin-bottom: 16px;
+}
+
+.student-journey-heading h2 {
+  margin: 0;
+  color: #172033;
+  font-size: 1.05rem;
+}
+
+.student-journey-heading p {
+  margin: 6px 0 0;
+  color: #98a2b3;
+  font-size: 0.82rem;
+}
+
+.student-application-card {
+  background: #ffffff;
+  border: 1px solid #e6e9ee;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.student-application-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding: 20px 22px;
+}
+
+.student-application-header h3 {
+  margin: 0;
+  color: #172033;
+  font-size: 1rem;
+}
+
+.student-application-header p {
+  margin: 6px 0 0;
+  color: #667085;
+  font-size: 0.82rem;
+}
+
+.student-application-meta {
+  padding: 11px 22px;
+
+  background: #f8f9fb;
+  border-top: 1px solid #eaecf0;
+
+  color: #98a2b3;
+  font-size: 0.76rem;
+}
+
+.application-result-badge {
+  padding: 5px 10px;
+  border-radius: 999px;
+
+  background: #f2f4f7;
+  color: #475467;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.student-rounds {
+  padding: 8px 22px 18px;
+}
+
+.student-round-item {
+  display: flex;
+  gap: 14px;
+  min-height: 62px;
+}
+
+.student-round-marker {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 14px;
+  flex-shrink: 0;
+}
+
+.student-round-dot {
+  position: relative;
+  z-index: 2;
+
+  width: 9px;
+  height: 9px;
+  margin-top: 7px;
+
+  background: #b68a28;
+  border-radius: 50%;
+}
+
+.student-round-line {
+  position: absolute;
+  top: 16px;
+  bottom: -7px;
+
+  width: 1px;
+  background: #e1e4e8;
+}
+
+.student-round-details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+
+  width: 100%;
+  padding-bottom: 18px;
+}
+
+.student-round-details > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.student-round-details strong {
+  color: #344054;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.student-round-details > div span {
+  color: #98a2b3;
+  font-size: 0.72rem;
+}
+
+.student-round-result {
+  padding: 4px 8px;
+  border-radius: 999px;
+
+  background: #f2f4f7;
+  color: #667085;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.student-round-result.cleared,
+.student-round-result.accepted {
+  background: #e9f6ee;
+  color: #267447;
+}
+
+.student-round-result.not_selected {
+  background: #fef0f0;
+  color: #b42318;
+}
+
+.student-other-applications {
+  margin-top: 28px;
+}
+
+.student-other-applications-heading {
+  margin-bottom: 14px;
+}
+
+.student-other-applications-heading h3 {
+  margin: 0;
+  color: #172033;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.student-other-applications-heading p {
+  margin: 5px 0 0;
+  color: #98a2b3;
+  font-size: 0.8rem;
+}
+
+.student-other-applications-table-wrapper {
+  overflow-x: auto;
+
+  background: #ffffff;
+  border: 1px solid #e6e9ee;
+  border-radius: 12px;
+}
+
+.student-other-applications-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.student-other-applications-table thead {
+  background: #f8f9fb;
+}
+
+.student-other-applications-table th {
+  padding: 12px 18px;
+
+  border-bottom: 1px solid #eaecf0;
+
+  color: #667085;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.student-other-applications-table td {
+  padding: 15px 18px;
+
+  border-bottom: 1px solid #f0f1f3;
+
+  color: #475467;
+  font-size: 0.82rem;
+  vertical-align: middle;
+}
+
+.student-other-applications-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.student-other-applications-table tbody tr:hover {
+  background: #fafbfc;
+}
+
+.student-other-applications-table td strong {
+  color: #172033;
+  font-weight: 600;
+}
+
+.student-application-outcome {
+  display: inline-flex;
+  padding: 5px 9px;
+
+  border-radius: 999px;
+  background: #f2f4f7;
+  color: #667085;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.student-application-outcome.rejected {
+  background: #fef0f0;
+  color: #b42318;
+}
+
+.student-application-outcome.withdrawn {
+  background: #fff7e6;
+  color: #9a6700;
+}
+
+.student-application-outcome.applied,
+.student-application-outcome.in_progress {
+  background: #eef4ff;
+  color: #3538cd;
+}

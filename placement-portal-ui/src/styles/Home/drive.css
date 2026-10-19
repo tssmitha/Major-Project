@@ -1,0 +1,146 @@
+.home-drive-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  transition: all .25s ease;
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.home-drive-card:hover{
+     transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
+
+.home-drive-status{
+    display:inline-block;
+    padding:6px 12px;
+    border-radius:20px;
+    background:#e9f8ef;
+    color:#1b8a3c;
+    font-size:.75rem;
+    margin-bottom:22px;
+}
+
+.home-drive-card h3{
+    margin:0;
+    color:#061b36;
+    font-size: 1.15rem;
+}
+
+.home-drive-card p{
+    color:#555;
+    margin:8px 0;
+}
+
+.home-company-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.home-company-header img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.home-company-header > div {
+  min-width: 0;
+}
+
+.home-drive-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+
+.home-info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.home-info-item span {
+  overflow-wrap: break-word;
+  min-width: 0;
+}
+
+.home-info-item svg{
+    flex-shrink:0;
+    stroke-width:2;
+}
+
+.home-deadline {
+  margin-bottom: 0;
+  padding: 14px 16px;
+  background: #f8fafc;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.home-divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 22px 0;
+  margin-top: auto;
+}
+
+.home-branches-wrapper,
+.home-branches {
+  min-width: 0;
+}
+
+.home-branch-label {
+  font-size: .85rem;
+  color: #6b7280;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.home-branches{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin: 0 0 4px 0;
+}
+
+.home-branches span{
+    padding:6px 12px;
+    border-radius:18px;
+    background:#f3f4f6;
+    font-size:.8rem;
+}
+
+.home-card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.home-details-btn{
+    background: #0b5ed7;
+    color: #fff;
+    border:none;
+    border-radius: 10px;
+    padding: 12px 0;
+    font-weight:600;
+    cursor:pointer;
+    align-self: stretch;
+    text-align: center;
+    transition: background .2s ease;
+}
+
+.home-details-btn:hover{
+    background:#0947a8;
+}

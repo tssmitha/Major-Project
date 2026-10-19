@@ -1,0 +1,338 @@
+.resources-page {
+  min-height: 100vh;
+  background: #f5f7fa;
+  color: #061b36;
+}
+
+.resources-hero {
+  padding: 72px clamp(24px, 8vw, 120px);
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(227, 174, 27, 0.16),
+      transparent 28%
+    ),
+    linear-gradient(135deg, #061b36 0%, #7da3c9 100%);
+  color: #ffffff;
+}
+
+.resources-hero-content {
+  max-width: 760px;
+}
+
+.resources-eyebrow {
+  margin: 0 0 14px;
+  color: #e3ae1b;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.resources-hero h1 {
+  max-width: 680px;
+  margin: 0;
+  font-size: clamp(2.2rem, 4vw, 3.7rem);
+  line-height: 1.12;
+}
+
+.resources-hero-description {
+  max-width: 650px;
+  margin: 20px 0 30px;
+  color: #d8e0ea;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.resources-search {
+  display: flex;
+  max-width: 620px;
+  padding: 6px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.2);
+}
+
+.resources-search input {
+  flex: 1;
+  min-width: 0;
+  padding: 13px 16px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #061b36;
+  font: inherit;
+}
+
+.resources-search input::placeholder {
+  color: #7d8997;
+}
+
+.resources-search button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 7px;
+  background: #e3ae1b;
+  color: #061b36;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.resources-search button:hover {
+  background: #f0bd31;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .resources-hero {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .resources-search {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .resources-search button {
+    width: 100%;
+  }
+}
+
+.resource-categories {
+  padding: 70px clamp(24px, 8vw, 120px) 80px;
+}
+
+.resources-section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 34px;
+}
+
+.resources-section-label {
+  margin: 0 0 10px;
+  color: #c79511;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.resources-section-heading h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  color: #061b36;
+}
+
+.resources-section-heading > p {
+  max-width: 500px;
+  margin: 0;
+  color: #687688;
+  line-height: 1.7;
+}
+
+.resource-category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.resource-category-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 270px;
+  padding: 28px;
+  border: 1px solid rgba(6, 27, 54, 0.09);
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(6, 27, 54, 0.06);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.resource-category-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(199, 149, 17, 0.4);
+  box-shadow: 0 16px 35px rgba(6, 27, 54, 0.11);
+}
+
+.resource-category-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 22px;
+  border-radius: 10px;
+  background: rgba(227, 174, 27, 0.13);
+  color: #9e7508;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.resource-category-card h3 {
+  margin: 0 0 12px;
+  color: #061b36;
+  font-size: 1.15rem;
+}
+
+.resource-category-card > p {
+  margin: 0 0 26px;
+  color: #687688;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.resource-category-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid rgba(6, 27, 54, 0.08);
+}
+
+.resource-category-footer span {
+  color: #7a8795;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.resource-category-footer button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #a67900;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.resource-category-footer button:hover {
+  color: #061b36;
+}
+
+@media (max-width: 950px) {
+  .resources-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .resource-category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .resource-categories {
+    padding-top: 52px;
+    padding-bottom: 60px;
+  }
+
+  .resource-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-category-card {
+    min-height: auto;
+  }
+}
+
+.resources-roadmap {
+  padding: 72px clamp(24px, 8vw, 120px) 82px;
+  background: #ffffff;
+}
+
+.roadmap-heading {
+  max-width: 650px;
+  margin-bottom: 40px;
+}
+
+.roadmap-heading h2 {
+  margin: 0;
+  color: #061b36;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.roadmap-heading > p:last-child {
+  margin: 14px 0 0;
+  color: #687688;
+  line-height: 1.7;
+}
+
+.roadmap-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.roadmap-step {
+  position: relative;
+  min-height: 220px;
+  padding: 28px 24px;
+  overflow: hidden;
+  border: 1px solid rgba(6, 27, 54, 0.1);
+  border-radius: 14px;
+  background: #f8fafc;
+}
+
+.roadmap-step::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #e3ae1b;
+}
+
+.roadmap-step-number {
+  display: block;
+  margin-bottom: 30px;
+  color: rgba(6, 27, 54, 0.18);
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.roadmap-step h3 {
+  margin: 0 0 12px;
+  color: #061b36;
+  font-size: 1.05rem;
+}
+
+.roadmap-step p {
+  margin: 0;
+  color: #687688;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 1000px) {
+  .roadmap-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .resources-roadmap {
+    padding-top: 56px;
+    padding-bottom: 62px;
+  }
+
+  .roadmap-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .roadmap-step {
+    min-height: auto;
+  }
+}

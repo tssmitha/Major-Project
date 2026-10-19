@@ -1,0 +1,191 @@
+.admin-applications-page {
+  min-height: 100vh;
+  padding: 32px;
+  background: #f5f7fa;
+  color: #172033;
+}
+
+/* Page header */
+
+.admin-applications-header {
+  margin-bottom: 28px;
+}
+
+.admin-applications-label {
+  margin: 0 0 6px;
+  color: #8d6a12;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.admin-applications-header h1 {
+  margin: 0 0 8px;
+  color: #14213d;
+  font-size: 2rem;
+}
+
+.admin-applications-header > div > p:last-child {
+  margin: 0;
+  color: #667085;
+}
+
+/* Global summary */
+
+.admin-applications-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.admin-application-summary-card {
+  padding: 20px;
+  border: 1px solid #e3e7ed;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.admin-application-summary-card p {
+  margin: 0 0 12px;
+  color: #667085;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.admin-application-summary-card h2 {
+  margin: 0 0 8px;
+  color: #14213d;
+  font-size: 1.75rem;
+}
+
+.admin-application-summary-card span {
+  color: #8a94a6;
+  font-size: 0.78rem;
+}
+
+/* Drive filters */
+
+.admin-drive-filters {
+  margin-top: 24px;
+  padding: 22px;
+  border: 1px solid #e3e7ed;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.admin-drive-filters-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.admin-drive-filters-heading h2 {
+  margin: 0 0 5px;
+  color: #172033;
+  font-size: 1.1rem;
+}
+
+.admin-drive-filters-heading p {
+  margin: 0;
+  color: #778195;
+  font-size: 0.86rem;
+}
+
+.admin-filter-reset {
+  padding: 8px 12px;
+  border: 1px solid #d6dce5;
+  border-radius: 7px;
+  background: #fff;
+  color: #315b96;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-filter-reset:hover {
+  background: #f4f7fb;
+}
+
+.admin-drive-filter-grid {
+  display: grid;
+  grid-template-columns: minmax(300px, 2fr) repeat(2, minmax(180px, 1fr));
+  gap: 16px;
+  align-items: end;
+}
+
+.admin-filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.admin-filter-field label {
+  color: #344054;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.admin-filter-field input,
+.admin-filter-field select {
+  width: 100%;
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid #d6dce5;
+  border-radius: 7px;
+  outline: none;
+  background: #fff;
+  color: #344054;
+  font: inherit;
+  font-size: 0.86rem;
+}
+
+.admin-filter-field input:focus,
+.admin-filter-field select:focus {
+  border-color: #315b96;
+  box-shadow: 0 0 0 3px rgba(49, 91, 150, 0.1);
+}
+
+/* Company drive cards */
+
+.company-drive-application-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+/* Responsive layout */
+
+@media (max-width: 1100px) {
+  .admin-applications-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-drive-filter-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-drive-search-field {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 650px) {
+  .admin-applications-page {
+    padding: 20px;
+  }
+
+  .admin-applications-summary,
+  .admin-drive-filter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-drive-filters-heading {
+    flex-direction: column;
+  }
+
+  .admin-drive-search-field {
+    grid-column: auto;
+  }
+}

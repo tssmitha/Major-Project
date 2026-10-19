@@ -1,0 +1,247 @@
+.admin-drive-details-page {
+  min-height: 100vh;
+  padding: 32px;
+  background: #f5f7fa;
+  color: #172033;
+}
+
+/* Back navigation */
+
+.admin-drive-back-link {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 22px;
+  color: #315b96;
+  font-size: 0.84rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.admin-drive-back-link:hover {
+  color: #1f477d;
+  text-decoration: underline;
+}
+
+/* Drive header */
+
+.admin-drive-details-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.admin-drive-title > p {
+  margin: 0 0 7px;
+  color: #8d6a12;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.admin-drive-title h1 {
+  margin: 0 0 14px;
+  color: #14213d;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.admin-drive-title-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #667085;
+  font-size: 0.82rem;
+}
+
+.admin-drive-title-meta > span:last-child {
+  padding-left: 14px;
+  border-left: 1px solid #d7dde6;
+}
+
+.admin-drive-title-meta strong {
+  color: #344054;
+}
+
+/* Drive status */
+
+.admin-drive-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: capitalize;
+}
+
+.admin-drive-status.active,
+.admin-drive-status.in-progress {
+  background: #e8f7ef;
+  color: #237a49;
+}
+
+.admin-drive-status.completed {
+  background: #edf2f8;
+  color: #48617d;
+}
+
+.admin-drive-status.upcoming {
+  background: #fff4dc;
+  color: #946b10;
+}
+
+.admin-drive-status.cancelled {
+  background: #fdecec;
+  color: #b42318;
+}
+
+/* Update button */
+
+.admin-update-progress-button {
+  flex-shrink: 0;
+  padding: 11px 17px;
+  border: none;
+  border-radius: 7px;
+  background: #b58216;
+  color: #fff;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-update-progress-button:hover {
+  background: #946b10;
+}
+
+/* Latest update */
+
+.admin-drive-latest-update {
+  display: flex;
+  gap: 17px;
+  padding: 20px 22px;
+  border: 1px solid #dce3ec;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(20, 33, 61, 0.03);
+}
+
+.admin-latest-update-marker {
+  flex: 0 0 5px;
+  border-radius: 5px;
+  background: #b58216;
+}
+
+.admin-latest-update-content {
+  min-width: 0;
+}
+
+.admin-latest-update-content > p {
+  margin: 0 0 7px;
+  color: #8d6a12;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+}
+
+.admin-latest-update-content h2 {
+  margin: 0 0 7px;
+  color: #172033;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.admin-latest-update-content > span {
+  display: block;
+  color: #5f6b7c;
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.admin-latest-update-content footer {
+  margin-top: 12px;
+  color: #929bad;
+  font-size: 0.73rem;
+}
+
+/* Responsive */
+
+@media (max-width: 650px) {
+  .admin-drive-details-page {
+    padding: 20px;
+  }
+
+  .admin-drive-details-header {
+    flex-direction: column;
+  }
+
+  .admin-drive-title h1 {
+    font-size: 1.6rem;
+  }
+
+  .admin-drive-title-meta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .admin-drive-title-meta > span:last-child {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .admin-drive-latest-update {
+    padding: 17px;
+  }
+}
+
+.admin-drive-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.admin-drive-summary article {
+  padding: 18px;
+  border: 1px solid #e1e6ed;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.admin-drive-summary span {
+  display: block;
+  margin-bottom: 10px;
+  color: #667085;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.admin-drive-summary strong {
+  display: block;
+  margin-bottom: 7px;
+  color: #14213d;
+  font-size: 1.65rem;
+}
+
+.admin-drive-summary p {
+  margin: 0;
+  color: #929bad;
+  font-size: 0.73rem;
+}
+
+@media (max-width: 1000px) {
+  .admin-drive-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .admin-drive-summary {
+    grid-template-columns: 1fr;
+  }
+}
+

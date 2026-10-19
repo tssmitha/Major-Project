@@ -1,0 +1,40 @@
+.active-drives{
+    width:86%;
+    margin:0 auto 80px;
+    padding: 10px 0;
+}
+
+/* Target the wrapper that maps over DriveCard on the Home Page */
+.active-drives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.section-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.section-header h2{
+    font-size:2rem;
+    color:#061b36;
+    margin : 0;
+}
+
+.section-header a{
+    text-decoration:none;
+    color:#0b5ed7;
+    font-weight:600;
+}
+
+.drive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  padding: 10px 0;
+}
+

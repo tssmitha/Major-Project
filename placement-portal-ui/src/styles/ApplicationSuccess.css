@@ -1,0 +1,246 @@
+.application-success-page {
+  min-height: 100vh;
+  padding: 48px 24px;
+  background: #f5f7fa;
+  color: #071f3a;
+}
+
+.application-success-container {
+  width: min(980px, 100%);
+  margin: 0 auto;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #dfe5eb;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(7, 31, 58, 0.08);
+}
+
+.success-header-strip {
+  padding: 14px 22px;
+  background: #1b5237;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.success-content-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+  gap: 28px;
+  padding: 32px;
+}
+
+.success-left-column {
+  min-width: 0;
+}
+
+.success-message-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.success-check-icon {
+  display: grid;
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  place-items: center;
+  background: #149556;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  font-weight: 800;
+  box-shadow: 0 8px 18px rgba(20, 149, 86, 0.2);
+}
+
+.success-message-row h1 {
+  margin: 0 0 8px;
+  color: #1b5237;
+  font-size: 1.75rem;
+}
+
+.success-message-row p {
+  margin: 0;
+  color: #566477;
+  line-height: 1.7;
+}
+
+.success-message-row strong {
+  color: #061b36;
+}
+
+.success-wish-box {
+  margin: 24px 0;
+  padding: 14px 18px;
+  text-align: center;
+  background: #edf9f1;
+  color: #237744;
+  border: 1px solid #bde5ca;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.submission-details-card {
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #dfe5eb;
+  border-radius: 12px;
+}
+
+.submission-details-card h2 {
+  margin: 0 0 18px;
+  color: #061b36;
+  font-size: 1.05rem;
+}
+
+.submission-detail-row {
+  display: grid;
+  grid-template-columns: 145px 1fr;
+  gap: 18px;
+  padding: 10px 0;
+  border-bottom: 1px solid #edf0f3;
+}
+
+.submission-detail-row:last-child {
+  border-bottom: 0;
+}
+
+.submission-detail-row span {
+  color: #7a8797;
+  font-size: 0.9rem;
+}
+
+.submission-detail-row strong {
+  color: #071f3a;
+  font-size: 0.92rem;
+  overflow-wrap: anywhere;
+}
+
+.next-steps-card {
+  align-self: start;
+  padding: 22px;
+  background: #f2fbf5;
+  border: 1px solid #cdebd6;
+  border-radius: 12px;
+}
+
+.next-steps-card h2 {
+  margin: 0 0 20px;
+  color: #061b36;
+  font-size: 1.05rem;
+}
+
+.next-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 12px;
+  padding-bottom: 20px;
+}
+
+.next-step:last-child {
+  padding-bottom: 0;
+}
+
+.next-step:not(:last-child)::after {
+  position: absolute;
+  top: 28px;
+  bottom: 0;
+  left: 13px;
+  width: 1px;
+  background: #9fd3ae;
+  content: "";
+}
+
+.next-step > span {
+  z-index: 1;
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  background: #ffffff;
+  color: #1b5237;
+  border: 1px solid #9fd3ae;
+  border-radius: 50%;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.next-step p {
+  margin: 3px 0 0;
+  color: #566477;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.success-action-buttons {
+  display: flex;
+  gap: 12px;
+  padding: 0 32px 32px;
+}
+
+.success-primary-button,
+.success-secondary-button {
+  padding: 12px 20px;
+  border-radius: 9px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.success-primary-button {
+  background: #1b5237;
+  color: #ffffff;
+  border: 1px solid #1b5237;
+}
+
+.success-primary-button:hover {
+  background: #0f6338;
+  border-color: #0f6338;
+}
+
+.success-secondary-button {
+  background: #ffffff;
+  color: #071f3a;
+  border: 1px solid #cfd6df;
+}
+
+.success-secondary-button:hover {
+  background: #f2f5f8;
+}
+
+@media (max-width: 760px) {
+  .application-success-page {
+    padding: 28px 16px;
+  }
+
+  .success-content-layout {
+    grid-template-columns: 1fr;
+    padding: 24px 20px;
+  }
+
+  .success-action-buttons {
+    flex-direction: column;
+    padding: 0 20px 24px;
+  }
+
+  .success-action-buttons button {
+    width: 100%;
+  }
+
+  .submission-detail-row {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 520px) {
+  .success-message-row {
+    flex-direction: column;
+  }
+
+  .success-message-row h1 {
+    font-size: 1.45rem;
+  }
+}

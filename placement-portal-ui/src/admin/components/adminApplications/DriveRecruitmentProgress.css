@@ -1,0 +1,177 @@
+.drive-recruitment-progress {
+  margin-top: 24px;
+  padding: 24px;
+  border: 1px solid #e1e6ed;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.drive-progress-heading {
+  margin-bottom: 24px;
+}
+
+.drive-progress-heading h2 {
+  margin: 0 0 6px;
+  color: #172033;
+  font-size: 1.1rem;
+}
+
+.drive-progress-heading p {
+  margin: 0;
+  color: #778195;
+  font-size: 0.82rem;
+}
+
+/* Vertical timeline */
+
+.drive-progress-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.drive-progress-timeline::before {
+  position: absolute;
+  top: 22px;
+  bottom: 22px;
+  left: 20px;
+  width: 2px;
+  background: #dfe4eb;
+  content: "";
+}
+
+.drive-progress-round {
+  position: relative;
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.drive-progress-marker {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  align-self: center;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: #e8ecf1;
+  color: #667085;
+  box-shadow: 0 0 0 1px #dfe4eb;
+}
+
+.drive-progress-marker span {
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.drive-progress-round-content {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) auto;
+  gap: 12px 24px;
+  align-items: center;
+  padding: 16px 18px;
+  border: 1px solid #e6eaf0;
+  border-radius: 8px;
+  background: #fafbfc;
+}
+
+.drive-progress-round-content > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.drive-progress-round-content h3 {
+  margin: 0;
+  color: #344054;
+  font-size: 0.9rem;
+}
+
+.drive-progress-round-content > strong {
+  color: #172033;
+  font-size: 0.85rem;
+  text-align: right;
+}
+
+.drive-progress-round-content > p {
+  grid-column: 1 / -1;
+  margin: -4px 0 0;
+  color: #929bad;
+  font-size: 0.72rem;
+}
+
+/* Round status */
+
+.drive-round-status {
+  padding: 4px 7px;
+  border-radius: 20px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.drive-round-status.completed {
+  background: #e8f7ef;
+  color: #237a49;
+}
+
+.drive-round-status.in_progress {
+  background: #fff4dc;
+  color: #946b10;
+}
+
+.drive-round-status.upcoming {
+  background: #edf0f4;
+  color: #778195;
+}
+
+/* Completed round */
+
+.drive-progress-round.completed .drive-progress-marker {
+  background: #2e8b57;
+  color: #fff;
+  box-shadow: 0 0 0 1px #2e8b57;
+}
+
+/* Current round */
+
+.drive-progress-round.in_progress .drive-progress-marker {
+  background: #b58216;
+  color: #fff;
+  box-shadow: 0 0 0 3px rgba(181, 130, 22, 0.18);
+}
+
+.drive-progress-round.in_progress .drive-progress-round-content {
+  border-color: #d7b967;
+  background: #fffaf0;
+}
+
+.drive-progress-round.in_progress .drive-progress-round-content h3 {
+  color: #805d0f;
+}
+
+/* Upcoming round */
+
+.drive-progress-round.upcoming .drive-progress-round-content {
+  background: #f8f9fb;
+  opacity: 0.75;
+}
+
+@media (max-width: 650px) {
+  .drive-recruitment-progress {
+    padding: 18px;
+  }
+
+  .drive-progress-round-content {
+    grid-template-columns: 1fr;
+  }
+
+  .drive-progress-round-content > strong {
+    text-align: left;
+  }
+}

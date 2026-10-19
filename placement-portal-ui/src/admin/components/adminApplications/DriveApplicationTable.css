@@ -1,0 +1,125 @@
+.drive-applications-table-wrapper {
+  overflow-x: auto;
+  border: 1px solid #e1e6ed;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.drive-applications-table {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: collapse;
+}
+
+.drive-applications-table th {
+  padding: 14px 18px;
+  border-bottom: 1px solid #e1e6ed;
+  background: #f8f9fb;
+  color: #667085;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.drive-applications-table td {
+  padding: 17px 18px;
+  border-bottom: 1px solid #edf0f4;
+  color: #475467;
+  font-size: 0.85rem;
+  vertical-align: middle;
+}
+
+.drive-applications-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.drive-applications-table tbody tr:hover {
+  background: #fafbfc;
+}
+
+.drive-table-company {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.drive-table-company strong {
+  color: #172033;
+  font-size: 0.9rem;
+}
+
+.drive-table-company span {
+  color: #778195;
+  font-size: 0.78rem;
+}
+
+.drive-table-status {
+  display: inline-flex;
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.drive-table-status.active {
+  background: #f1f4f3;
+  color: #237a49;
+}
+
+.drive-table-status.completed {
+  background: #237a49;
+  color: #f1f4f3;
+}
+
+.drive-table-status.upcoming {
+  background: #fff4dc;
+  color: #946b10;
+}
+
+.drive-table-view-button {
+  padding: 7px 11px;
+  border: 1px solid #cfd8e5;
+  border-radius: 6px;
+  background: #fff;
+  color: #315b96;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.drive-table-view-button:hover {
+  border-color: #315b96;
+  background: #f3f7fc;
+}
+
+@media (max-width: 650px) {
+  .drive-applications-table th,
+  .drive-applications-table td {
+    padding: 13px 14px;
+  }
+}
+
+.drive-applications-table .drive-table-empty {
+  padding: 48px 20px;
+  text-align: center;
+}
+
+.drive-table-empty strong,
+.drive-table-empty span {
+  display: block;
+}
+
+.drive-table-empty strong {
+  margin-bottom: 6px;
+  color: #344054;
+  font-size: 0.95rem;
+}
+
+.drive-table-empty span {
+  color: #8a94a6;
+  font-size: 0.8rem;
+}
